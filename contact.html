@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="contact.css">
+    <script>
+        function getFeedback() {
+
+            alert("Thanks for telling us your thoughts!");
+
+    }
+    </script>
+</head>
+<body>
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+    
+        <img src="lotus_logo.png" alt="Retail Plant Blog"
+                  align = "left"
+                  width="5%"
+                  height= auto;>
+        <a href="#" class="logo">LOTUS PLANT BLOG<span></span></a>
+    
+        <nav class="navbar">
+          <a href="Home Page.html">home</a>
+          <a href="about.html">blog</a>
+          <a href="shop.html">plants</a>
+          <a href="contact.html">contact</a>
+    
+        </nav>
+    
+      </header>
+
+        <br>
+    <body>
+        <div class="login-page">
+        <div class="form">
+        <form style ="text-align: center" form action = "#" method = post id = "form1" onsubmit="return getFeedback()">
+    
+        <p><b>HAVE ANY ADDITIONAL QUESTIONS? WE HAVE ANSWERS!</b></p>
+    <p>
+        <label>First Name <br><input id = "firstname" type = "text" size = "30"
+         maxlength = "30" required></label>
+    </p>
+    <p>
+        <label>Last Name <br><input id = "lastname" type = "text" size = "30"
+        required></label>
+    </p>       
+     <p> 
+        <label>Email <br><input id = "email" type = "email" size = "30"
+        maxlength = "30" required></label>
+    </p>
+    <p> 
+        <label>Feedback <br><textarea name = "feedback" id = "feedback" type = "text" style = "height:150px; width:230px;" size = "30"
+        required></textarea></label>
+    </p>
+    <p>
+        <button onclick="send()">Submit</button>
+     </p> 
+        </form>
+        </div>
+        </div>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"> 
+</script> 
+<script src="login.js"></script> 
+    </body>
+</html>
